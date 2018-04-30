@@ -1,9 +1,9 @@
 class Post < ActiveRecord::Base
-  validate :title, presence: true
-  validate :content, length: {minimum: 250}
-  validate :summary, length: {maximum: 250}
-  validate :category, inclusion: {in: %w(Fiction Non-Fiction)}
-  validate :clickbait?
+  validates :title, presence: true
+  validates :content, length: {minimum: 250}
+  validates :summary, length: {maximum: 250}
+  validates :category, inclusion: {in: %w(Fiction Non-Fiction)}
+  validates :clickbait?
 
   private
 
