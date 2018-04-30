@@ -7,6 +7,11 @@ class Post < ActiveRecord::Base
 
   private
 
+  CLICKBAIT = ["Won't Believe", "Secret", "Top", "Guess"]
+
   def clickbait?
+    if title != nil
+      if CLICKBAIT.none?
+    end
   end
 end
