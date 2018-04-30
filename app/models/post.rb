@@ -7,6 +7,6 @@ class Post < ActiveRecord::Base
 
   private
 
-  def clickbait 
+  def clickbait
   end
 end
